@@ -1,0 +1,55 @@
+$baseColor1: rgba(187,200,237,1);
+$baseColor2: rgba(187,200,237,0.5);
+
+$fontColor1: #1F2B3C;
+$fontColor2: #2A3B52;
+$fillColor: rgba(187,200,237,0.5);
+$fillColor2: rgba(187,200,237,1);
+$glassWhite: rgba(255,255,255,1);
+$mainBg: white;
+
+
+$tittlesFont: 'Montserrat';
+$h1Weight: 900;
+$h1Size: 1.3em;
+$h2Size: 1em;
+$h2Weight: 700;
+$bodyFont: 'Raleway';
+
+
+@mixin flexPosition($direction,$wrapping,$just,$align){
+    display: flex;
+    flex: $direction $wrapping;
+    justify-content: $just;
+    @if $wrapping == 'nowrap' {
+		align-items		: $align;	
+	}@else{
+		align-content	: $align;
+	}	
+}
+@mixin grid ( $repetirC , $grosorC , $gap , $repetirR : initial, $grosorR : initial ){
+	display					: grid;
+	grid-template-columns	: repeat( $repetirC , $grosorC );
+	@if $repetirR != 'initial' {
+		grid-template-rows	: repeat( $repetirR , $grosorR );
+	}
+	gap: $gap ;
+}
+@mixin fixedTop(){
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+@mixin up($separation){
+    text-transform: uppercase;
+    letter-spacing: $separation;
+}
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == medium {
+        @media screen and (max-width:1000px) { @content };
+    }
+    @if $breakpoint == small {
+        @media screen and (max-width:650px) { @content };
+    }
+}
