@@ -2,14 +2,6 @@
 
 @import '_header', '_vars&fxs', '_section';
 
-h1{
-    font-family: $bodyFont;
-    font-weight: $h1Weight;
-    font-size: $h1Size;
-    color: $baseColor4;
-    text-transform: uppercase;
-}
-
 body{
     background-color: $blackColor;
     font-family: $bodyFont;
