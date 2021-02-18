@@ -1,5 +1,5 @@
 @import '_reset';
-
+@include reset();
 @import '_header', '_vars&fxs', '_section';
 
 body{

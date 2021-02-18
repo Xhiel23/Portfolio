@@ -13,6 +13,21 @@ header{
         .logo{
             height: 90px ;
         }
+        .menu{
+            width: calc(100% - 90px);
+        }
+        .menuList{
+            @include flexPosition(column, nowrap,flex-end,center);
+            .menuItem{
+                font-family: $bodyFont;
+                color: $baseColor3;
+                font-size: 1.3em;
+                letter-spacing: 2px;
+                font-weight: 600;
+                padding-left: 2em;
+            }
+            display: none;
+        }
         .menuIcon{
             display:flex;
             flex-direction:column;
@@ -30,7 +45,6 @@ header{
                     }
                 }
             }
-    
         }
     }
 }
