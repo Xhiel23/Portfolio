@@ -1,1 +1,7 @@
 @import '_reset';
+
+@import '_header', '_vars&fxs', '_section';
+body{
+    background-color: $blackColor;
+    font-family: $bodyFont;
+}

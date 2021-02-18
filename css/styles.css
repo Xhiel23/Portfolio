@@ -1,0 +1,38 @@
+.centered {
+  width: 90%;
+  display: flex;
+  flex: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 0 1.5em; }
+  .centered .logo {
+    height: 90px; }
+  .centered .menuIcon {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    cursor: pointer; }
+    .centered .menuIcon span {
+      background: #ee9d53;
+      border-radius: 10px;
+      height: 6px;
+      margin: 6px 0;
+      transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+      .centered .menuIcon span:nth-child(1) {
+        width: calc(25% + 1 * 25%); }
+      .centered .menuIcon span:nth-child(2) {
+        width: calc(25% + 2 * 25%); }
+      .centered .menuIcon span:nth-child(3) {
+        width: calc(25% + 3 * 25%); }
+
+section {
+  display: flex;
+  flex: row nowrap;
+  justify-content: center;
+  align-items: center; }
+
+body {
+  background-color: #2A1626;
+  font-family: "Raleway"; }
+/*# sourceMappingURL=styles.css.map */

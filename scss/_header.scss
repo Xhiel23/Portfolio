@@ -1,0 +1,29 @@
+@import '_vars&fxs';
+.centered{
+    width: 90%;
+    @include flexPosition(row,nowrap,space-between,center);
+    margin: auto;
+    padding: 0 1.5em;
+    .logo{
+        height: 90px ;
+    }
+    .menuIcon{
+        display:flex;
+        flex-direction:column;
+        width: 50px;
+        cursor:pointer;
+        span{
+            background: $baseColor3;
+            border-radius:10px;
+            height: 6px;
+            margin: 6px 0;
+            transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+                  width: calc(25% + #{$i} * 25%);
+                }
+              }
+        }
+   
+    }
+}
