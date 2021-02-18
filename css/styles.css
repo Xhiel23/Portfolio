@@ -1,46 +1,52 @@
-.centered {
-  width: 90%;
-  display: flex;
-  flex: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  padding: 0 1.5em; }
-  .centered .logo {
-    height: 90px; }
-  .centered .menuIcon {
-    display: flex;
-    flex-direction: column;
-    width: 50px;
-    cursor: pointer; }
-    .centered .menuIcon span {
-      background: #ee9d53;
-      border-radius: 10px;
-      height: 6px;
-      margin: 6px 0;
-      transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
-      .centered .menuIcon span:nth-child(1) {
-        width: calc(25% + 1 * 25%); }
-      .centered .menuIcon span:nth-child(2) {
-        width: calc(25% + 2 * 25%); }
-      .centered .menuIcon span:nth-child(3) {
-        width: calc(25% + 3 * 25%); }
-
-section {
-  display: flex;
-  flex: row nowrap;
-  justify-content: center;
-  align-items: center; }
-  section .centered {
+header {
+  z-index: 3;
+  position: fixed;
+  top: 0;
+  background-color: transparent;
+  width: 100%; }
+  header .centered {
     width: 90%;
-    margin: auto;
-    background-color: red;
     display: flex;
     flex: row nowrap;
-    justify-content: center;
-    align-items: center; }
-    section .centered .textDiv {
-      text-align: left; }
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 2em; }
+    header .centered .logo {
+      height: 90px; }
+    header .centered .menuIcon {
+      display: flex;
+      flex-direction: column;
+      width: 50px;
+      cursor: pointer; }
+      header .centered .menuIcon span {
+        background: #ee9d53;
+        border-radius: 10px;
+        height: 6px;
+        margin: 6px 0;
+        transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6); }
+        header .centered .menuIcon span:nth-child(1) {
+          width: calc(25% + 1 * 25%); }
+        header .centered .menuIcon span:nth-child(2) {
+          width: calc(25% + 2 * 25%); }
+        header .centered .menuIcon span:nth-child(3) {
+          width: calc(25% + 3 * 25%); }
+
+section {
+  width: 100%;
+  height: 100vh; }
+
+#particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2a1626;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-position: 80% 50%;
+  z-index: 2; }
 
 h1 {
   font-family: "Raleway";
