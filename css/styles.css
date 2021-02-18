@@ -31,6 +31,23 @@ section {
   flex: row nowrap;
   justify-content: center;
   align-items: center; }
+  section .centered {
+    width: 90%;
+    margin: auto;
+    background-color: red;
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center; }
+    section .centered .textDiv {
+      text-align: left; }
+
+h1 {
+  font-family: "Raleway";
+  font-weight: 900;
+  font-size: 5em;
+  color: #ffffff;
+  text-transform: uppercase; }
 
 body {
   background-color: #2A1626;

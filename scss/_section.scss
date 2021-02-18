@@ -1,4 +1,13 @@
 section{
     @include flexPosition(row,nowrap,center,center);
-    
+    .centered{
+        width: 90%;
+        margin: auto;
+        background-color: red;
+        @include flexPosition(row,nowrap,center,center);
+        .textDiv{
+            text-align: left;
+        }
+    }
+
 }
