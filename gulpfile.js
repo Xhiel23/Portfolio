@@ -27,7 +27,7 @@ function scssTask() {
 // Typescript compilation using Babel
 
 function tsCompilation() {
-  return src('index.ts')
+  return src('ts/index.ts')
         .pipe(babel({
             presets: ['@babel/preset-typescript']
         }))
