@@ -1,6 +1,6 @@
 @import '_reset';
 @include reset();
-@import '_header', '_vars&fxs', '_section';
+@import '_header', '_vars&fxs', '_section' , '_footer';
 
 body{
     background-color: $blackColor;

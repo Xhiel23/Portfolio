@@ -44,7 +44,7 @@ header {
     margin: auto;
     padding: 2em; }
     header .centered .logo {
-      height: 90px; }
+      transform: scale(0.7); }
     header .centered .menu {
       width: calc(100% - 90px); }
     header .centered .menuList {
@@ -108,8 +108,8 @@ section {
         letter-spacing: 3px; }
       section .centeredSection .textDiv h3 {
         font-family: "Raleway";
-        font-weight: 700;
-        font-size: 2em;
+        font-weight: 600;
+        font-size: 2.5em;
         color: #ffffff; }
       section .centeredSection .textDiv .line {
         background: #ee9d53;
@@ -127,6 +127,120 @@ section {
   width: 100%;
   height: 100%;
   background-color: #2a1626; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  footer .formContainer {
+    width: 80%;
+    padding: 20px; }
+    footer .formContainer h2 {
+      color: #ee9d53;
+      font-size: 2.5em;
+      font-weight: 600;
+      font-family: "Montserrat";
+      text-align: center;
+      margin-bottom: 1em;
+      letter-spacing: 1px; }
+    footer .formContainer .row {
+      position: relative;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(autofit, minmax(300px, 1fr)); }
+    footer .formContainer .row .column {
+      position: relative;
+      width: 100%;
+      padding: 0 0.6em;
+      margin: 2em 0 0.7em;
+      transition: 0.5s; }
+    footer .formContainer .row .column .inputBox {
+      position: relative;
+      width: 100%;
+      height: 40px;
+      color: #ac3b69; }
+    footer .formContainer .row .column .inputBox input, footer .formContainer .row .column .inputBox.textArea textarea {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      box-shadow: none;
+      border: none;
+      outline: none;
+      font-size: 1.2em;
+      font-family: "Raleway";
+      font-weight: 600;
+      padding: 0 0.5em;
+      z-index: 1;
+      color: #572B4B; }
+      footer .formContainer .row .column .inputBox input:focus + .text, footer .formContainer .row .column .inputBox.textArea textarea:focus + .text, footer .formContainer .row .column .inputBox input:valid + .text, footer .formContainer .row .column .inputBox.textArea textarea:valid + .text {
+        top: -2em;
+        left: -0.5em; }
+      footer .formContainer .row .column .inputBox input:focus ~ .line, footer .formContainer .row .column .inputBox.textArea textarea:focus ~ .line, footer .formContainer .row .column .inputBox input:valid ~ .line, footer .formContainer .row .column .inputBox.textArea textarea:valid ~ .line {
+        height: 100%; }
+    footer .formContainer .row .column .inputBox .text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      line-height: 40px;
+      font-size: 1.2em;
+      padding: 0 0.5em;
+      display: block;
+      transition: 0.5s;
+      pointer-events: none;
+      font-family: "Montserrat";
+      font-weight: 600;
+      letter-spacing: 1px; }
+    footer .formContainer .row .column .inputBox .line {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: #ee9d53;
+      transition: 0.5s;
+      border-radius: 2px;
+      pointer-events: none; }
+    footer .formContainer .row .column .inputBox.textArea {
+      position: relative;
+      width: 100%;
+      height: 100px;
+      padding: 10px 0; }
+    footer .formContainer .row .column .inputBox.textArea textarea {
+      height: 100%;
+      resize: none; }
+    footer .formContainer .row .column button {
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      font-family: "Raleway";
+      font-size: 1.3em;
+      font-weight: 600;
+      letter-spacing: 1px;
+      margin: 0  0.5em;
+      padding: 0.4em 2em;
+      cursor: pointer;
+      background-color: #ee9d53;
+      color: #572B4B;
+      transition: all 0.5s ease; }
+      footer .formContainer .row .column button:hover {
+        background-color: #ac3b69;
+        color: #ffffff; }
+  footer .socialMediaIcons {
+    display: flex;
+    flex: row nowrap;
+    justify-content: center;
+    align-items: center; }
+    footer .socialMediaIcons .icon {
+      padding: 1em 0.5em;
+      font-size: 1.6em;
+      color: #ee9d53;
+      transition: all 0.5s ease; }
+      footer .socialMediaIcons .icon:hover {
+        color: #ffffff;
+        transform: scale(1.2); }
 
 body {
   background-color: #2A1626;

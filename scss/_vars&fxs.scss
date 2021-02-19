@@ -8,10 +8,21 @@ $baseColor4: #ffffff;
 $tittlesFont: 'Montserrat';
 $h1Weight: 900;
 $h1Size: 6em;
-$h2Size: 2em;
-$h2Weight: 700;
+$h2Size: 2.5em;
+$h2Weight: 600;
 $bodyFont: 'Raleway';
 
+@mixin sectionTittle(){
+    h2{
+        color: $baseColor3;
+        font-size: $h2Size;
+        font-weight: $h2Weight;
+        font-family: $tittlesFont;
+        text-align: center;
+        margin-bottom: 1em;
+        letter-spacing: 1px;
+    }
+}
 
 @mixin flexPosition($direction,$wrapping,$just,$align){
     display: flex;
