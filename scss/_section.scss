@@ -27,14 +27,15 @@
                 font-family: $bodyFont;
                 font-weight: $h2Weight;
                 font-size: $h2Size;
-                color: $baseColor4;
+                color: $baseColor3;
                 letter-spacing: 1px;
+                line-height: 1.5em;
             }
             .line{
-                background: $baseColor3;
+                background: $baseColor2;
                 border-radius: 2px;
                 height: 6px;
-                margin: 6px 0;
+                margin: 1.5em 0;
                 width: 30%;
             }
         }

@@ -50,7 +50,7 @@ h6 {
   font-weight: inherit;
   font-size: inherit; }
 
-form, input, footer .formContainer .row .column .inputBox.textArea textarea, textarea, select, button {
+form, input, .contactSection .formContainer .row .column .inputBox.textArea textarea, textarea, select, button {
   font-family: inherit;
   font-size: inherit;
   hyphens: auto;
@@ -143,13 +143,14 @@ header {
         font-family: "Raleway";
         font-weight: 600;
         font-size: 2.5em;
-        color: #ffffff;
-        letter-spacing: 1px; }
+        color: #ee9d53;
+        letter-spacing: 1px;
+        line-height: 1.5em; }
       .home .centeredSection .textDiv .line {
-        background: #ee9d53;
+        background: #ac3b69;
         border-radius: 2px;
         height: 6px;
-        margin: 6px 0;
+        margin: 1.5em 0;
         width: 30%; }
     .home .centeredSection .imgDiv img {
       transform: scale(0.7);
@@ -162,17 +163,17 @@ header {
   height: 100%;
   background-color: #2a1626; }
 
-footer {
+.contactSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
   padding: 2em; }
-  footer .formContainer {
+  .contactSection .formContainer {
     width: 80%;
     padding: 20px; }
-    footer .formContainer h3 {
+    .contactSection .formContainer h3 {
       color: #ee9d53;
       font-size: 2.5em;
       font-weight: 600;
@@ -180,23 +181,23 @@ footer {
       text-align: center;
       margin-bottom: 1em;
       letter-spacing: 1px; }
-    footer .formContainer .row {
+    .contactSection .formContainer .row {
       position: relative;
       width: 100%;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
-    footer .formContainer .row .column {
+    .contactSection .formContainer .row .column {
       position: relative;
       width: 100%;
       padding: 0 0.6em;
       margin: 2em 0 0.7em;
       transition: 0.5s; }
-    footer .formContainer .row .column .inputBox {
+    .contactSection .formContainer .row .column .inputBox {
       position: relative;
       width: 100%;
       height: 40px;
       color: #ac3b69; }
-    footer .formContainer .row .column .inputBox input, footer .formContainer .row .column .inputBox.textArea textarea {
+    .contactSection .formContainer .row .column .inputBox input, .contactSection .formContainer .row .column .inputBox.textArea textarea {
       position: absolute;
       width: 100%;
       height: 100%;
@@ -207,12 +208,12 @@ footer {
       padding: 0 0.5em;
       z-index: 1;
       color: #572B4B; }
-      footer .formContainer .row .column .inputBox input:focus + .text, footer .formContainer .row .column .inputBox.textArea textarea:focus + .text, footer .formContainer .row .column .inputBox input:valid + .text, footer .formContainer .row .column .inputBox.textArea textarea:valid + .text {
+      .contactSection .formContainer .row .column .inputBox input:focus + .text, .contactSection .formContainer .row .column .inputBox.textArea textarea:focus + .text, .contactSection .formContainer .row .column .inputBox input:valid + .text, .contactSection .formContainer .row .column .inputBox.textArea textarea:valid + .text {
         top: -2em;
         left: -0.5em; }
-      footer .formContainer .row .column .inputBox input:focus ~ .line, footer .formContainer .row .column .inputBox.textArea textarea:focus ~ .line, footer .formContainer .row .column .inputBox input:valid ~ .line, footer .formContainer .row .column .inputBox.textArea textarea:valid ~ .line {
+      .contactSection .formContainer .row .column .inputBox input:focus ~ .line, .contactSection .formContainer .row .column .inputBox.textArea textarea:focus ~ .line, .contactSection .formContainer .row .column .inputBox input:valid ~ .line, .contactSection .formContainer .row .column .inputBox.textArea textarea:valid ~ .line {
         height: 100%; }
-    footer .formContainer .row .column .inputBox .text {
+    .contactSection .formContainer .row .column .inputBox .text {
       position: absolute;
       top: 0;
       left: 0;
@@ -225,7 +226,7 @@ footer {
       font-family: "Montserrat";
       font-weight: 600;
       letter-spacing: 1px; }
-    footer .formContainer .row .column .inputBox .line {
+    .contactSection .formContainer .row .column .inputBox .line {
       position: absolute;
       bottom: 0;
       display: block;
@@ -235,15 +236,15 @@ footer {
       transition: 0.5s;
       border-radius: 2px;
       pointer-events: none; }
-    footer .formContainer .row .column .inputBox.textArea {
+    .contactSection .formContainer .row .column .inputBox.textArea {
       position: relative;
       width: 100%;
       height: 100px;
       padding: 10px 0; }
-    footer .formContainer .row .column .inputBox.textArea textarea {
+    .contactSection .formContainer .row .column .inputBox.textArea textarea {
       height: 100%;
       resize: none; }
-    footer .formContainer .row .column button {
+    .contactSection .formContainer .row .column button {
       border: none;
       border-radius: 2px;
       outline: none;
@@ -257,22 +258,34 @@ footer {
       background-color: #ee9d53;
       color: #572B4B;
       transition: all 0.5s ease; }
-      footer .formContainer .row .column button:hover {
+      .contactSection .formContainer .row .column button:hover {
         background-color: #ac3b69;
         color: #ffffff; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2em; }
   footer .socialMediaIcons {
     display: flex;
     flex: row nowrap;
     justify-content: center;
     align-items: center; }
     footer .socialMediaIcons .icon {
-      padding: 1em 0.5em;
-      font-size: 1.6em;
+      padding: 1em 0.8em;
+      font-size: 2em;
       color: #ee9d53;
       transition: all 0.5s ease; }
       footer .socialMediaIcons .icon:hover {
         color: #ffffff;
         transform: scale(1.2); }
+  footer .copyright {
+    padding: 1em;
+    color: #ee9d53;
+    opacity: 0.7; }
 
 body {
   background-color: #2A1626;
