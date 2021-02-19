@@ -207,7 +207,7 @@ header {
       font-weight: 600;
       padding: 0 0.5em;
       z-index: 1;
-      color: #572B4B; }
+      color: #ffffff; }
       .contactSection .formContainer .row .column .inputBox input:focus + .text, .contactSection .formContainer .row .column .inputBox.textArea textarea:focus + .text, .contactSection .formContainer .row .column .inputBox input:valid + .text, .contactSection .formContainer .row .column .inputBox.textArea textarea:valid + .text {
         top: -2em;
         left: -0.5em; }
