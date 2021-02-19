@@ -2,37 +2,70 @@
   margin: 0;
   padding: 0;
   border: 0;
-  box-sizing: border-box; }
-
-a {
-  display: block;
-  color: inherit;
-  text-decoration: none; }
-
-li {
-  list-style: none; }
-
-p a {
-  display: inline-flex; }
-
-h1, h2, h3, h4, h5, h6, strong {
-  font-size: inherit;
-  font-weight: inherit; }
+  box-sizing: border-box;
+  vertical-align: baseline; }
 
 img {
+  max-width: 100%;
   width: 100%;
-  display: block;
-  object-fit: cover; }
+  display: flex;
+  object-fit: cover;
+  object-position: center center; }
 
-.clear::after {
-  content: '';
+a {
+  display: flex;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit; }
+
+video {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+  object-position: center center; }
+
+p a {
+  display: inline; }
+
+li {
+  list-style-type: none; }
+
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  scroll-behavior: smooth; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  hyphens: auto;
+  font-weight: inherit;
+  font-size: inherit; }
+
+form, input, footer .formContainer .row .column .inputBox.textArea textarea, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
   display: block;
-  clear: both; }
+  color: inherit;
+  box-shadow: none;
+  border: none;
+  outline: none; }
 
 header {
   z-index: 3;
   position: fixed;
   top: 0;
+  left: 0;
   background-color: transparent;
   width: 100%; }
   header .centered {
@@ -78,10 +111,10 @@ header {
         header .centered .menuIcon span:nth-child(3) {
           width: calc(25% + 3 * 25%); }
 
-section {
+.home {
   width: 100%;
   height: 100vh; }
-  section .centeredSection {
+  .home .centeredSection {
     display: flex;
     flex: row nowrap;
     justify-content: center;
@@ -92,13 +125,13 @@ section {
     left: 5%;
     width: 90%;
     margin: auto; }
-    section .centeredSection .textDiv {
+    .home .centeredSection .textDiv {
       flex: 0.7;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: center; }
-      section .centeredSection .textDiv h1 {
+      .home .centeredSection .textDiv h1 {
         font-family: "Raleway";
         font-weight: 900;
         font-size: 6em;
@@ -106,18 +139,19 @@ section {
         margin: 0.2em 0;
         text-transform: uppercase;
         letter-spacing: 3px; }
-      section .centeredSection .textDiv h3 {
+      .home .centeredSection .textDiv h2 {
         font-family: "Raleway";
         font-weight: 600;
         font-size: 2.5em;
-        color: #ffffff; }
-      section .centeredSection .textDiv .line {
+        color: #ffffff;
+        letter-spacing: 1px; }
+      .home .centeredSection .textDiv .line {
         background: #ee9d53;
-        border-radius: 10px;
+        border-radius: 2px;
         height: 6px;
         margin: 6px 0;
         width: 30%; }
-    section .centeredSection .imgDiv img {
+    .home .centeredSection .imgDiv img {
       transform: scale(0.7);
       flex: 0.3; }
 
@@ -133,11 +167,12 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh; }
+  min-height: 100vh;
+  padding: 2em; }
   footer .formContainer {
     width: 80%;
     padding: 20px; }
-    footer .formContainer h2 {
+    footer .formContainer h3 {
       color: #ee9d53;
       font-size: 2.5em;
       font-weight: 600;
@@ -149,7 +184,7 @@ footer {
       position: relative;
       width: 100%;
       display: grid;
-      grid-template-columns: repeat(autofit, minmax(300px, 1fr)); }
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
     footer .formContainer .row .column {
       position: relative;
       width: 100%;
@@ -166,9 +201,6 @@ footer {
       width: 100%;
       height: 100%;
       background-color: transparent;
-      box-shadow: none;
-      border: none;
-      outline: none;
       font-size: 1.2em;
       font-family: "Raleway";
       font-weight: 600;

@@ -1,8 +1,7 @@
 @import '_vars&fxs';
 header{
     z-index: 3;
-    position: fixed;
-    top: 0;
+    @include fixedTop();
     background-color: transparent;
     width: 100%;
     .centered{

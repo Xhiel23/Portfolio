@@ -4,6 +4,7 @@ footer{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    padding: 2em;
     .formContainer{
         width: 80%;
         padding: 20px;
@@ -12,7 +13,7 @@ footer{
             position: relative;
             width: 100%;
             display: grid;
-            grid-template-columns: repeat(autofit,minmax(300px,1fr));
+            grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
         }
         .row .column{
             position: relative;
@@ -32,9 +33,6 @@ footer{
             width: 100%;
             height: 100%;
             background-color: transparent;
-            box-shadow: none;
-            border: none;
-            outline: none;
             font-size: 1.2em;
             font-family: $bodyFont;
             font-weight: 600;

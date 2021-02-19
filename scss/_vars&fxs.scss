@@ -13,7 +13,7 @@ $h2Weight: 600;
 $bodyFont: 'Raleway';
 
 @mixin sectionTittle(){
-    h2{
+    h3{
         color: $baseColor3;
         font-size: $h2Size;
         font-weight: $h2Weight;
@@ -33,14 +33,6 @@ $bodyFont: 'Raleway';
 	}@else{
 		align-content	: $align;
 	}	
-}
-@mixin grid ( $repetirC , $grosorC , $gap , $repetirR : initial, $grosorR : initial ){
-	display					: grid;
-	grid-template-columns	: repeat( $repetirC , $grosorC );
-	@if $repetirR != 'initial' {
-		grid-template-rows	: repeat( $repetirR , $grosorR );
-	}
-	gap: $gap ;
 }
 @mixin fixedTop(){
     position: fixed;
