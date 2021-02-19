@@ -48,7 +48,141 @@
     }
 }
 .projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include sectionTittle();
+    .webProjects{
+        width: 90%;
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        h4{
+            color: $baseColor2;
+            font-size: 1.6em;
+            font-weight: $h2Weight;
+            font-family: $tittlesFont;
+            text-align: center;
+            margin-bottom: 1em;
+            letter-spacing: 1px;
+        }
+        .Wprojects{
+            width:100%;
+            margin: 1em 0 0;
+            display: grid;
+            grid-template-columns: repeat(3 , 1fr );
+            gap: 1em;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1), 
+            0 2px 2px rgba(0,0,0,0.1), 
+            0 4px 4px rgba(0,0,0,0.1), 
+            0 8px 8px rgba(0,0,0,0.1),
+            0 16px 16px rgba(0,0,0,0.1);
+            .article{
+                position: relative;
+                overflow: hidden;
 
+
+                .article__content {
+                    backdrop-filter: blur(20px);
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    padding: 1rem;
+                    z-index: 1;
+                    margin-top: 1rem;
+                    text-align: center;
+                    &:after {
+                        content: '';
+                        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 200%;
+                        pointer-events: none;
+                        background-image: linear-gradient(
+                          to bottom,
+                          hsla(0, 0%, 0%, 0) 0%,
+                          hsla(0, 0%, 0%, 0.009) 11.7%,
+                          hsla(0, 0%, 0%, 0.034) 22.1%,
+                          hsla(0, 0%, 0%, 0.072) 31.2%,
+                          hsla(0, 0%, 0%, 0.123) 39.4%,
+                          hsla(0, 0%, 0%, 0.182) 46.6%,
+                          hsla(0, 0%, 0%, 0.249) 53.1%,
+                          hsla(0, 0%, 0%, 0.320) 58.9%,
+                          hsla(0, 0%, 0%, 0.394) 64.3%,
+                          hsla(0, 0%, 0%, 0.468) 69.3%,
+                          hsla(0, 0%, 0%, 0.540) 74.1%,
+                          hsla(0, 0%, 0%, 0.607) 78.8%,
+                          hsla(0, 0%, 0%, 0.668) 83.6%,
+                          hsla(0, 0%, 0%, 0.721) 88.7%,
+                          hsla(0, 0%, 0%, 0.762) 94.1%,
+                          hsla(0, 0%, 0%, 0.790) 100%
+                        );
+                        transform: translateY(-30%);
+                    }
+                  }
+                  
+                .content__title {
+                    font-size: 1.3rem;
+                    font-weight: 600;
+                    line-height: 1.5;
+                    color: $baseColor4;
+                }
+                  
+                .content__description {
+                    font-family: $bodyFont;
+                    color: $baseColor2;
+                    font-size: 11.5emem;
+                    line-height: 1.35;
+                    padding: 1em;
+                }
+                .content__techIcons{
+                    color: $baseColor3;
+                    padding: 1em;
+                    @include flexPosition(row,nowrap,center,center);
+                    .techIcon{
+                        font-size: 1.5em;
+                        padding: 0.4em;
+                        &:hover{
+                            color: $baseColor2;
+                        }
+                    }
+                }
+                .btn {
+                    border: none;
+                    border-radius: 2px;
+                    outline: none;
+                    font-family: $bodyFont;
+                    font-size: 1.5em;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    margin: 0  0.5em;
+                    padding: 0.4em .8em;
+                    cursor: pointer;
+                    
+                    background-color: $baseColor4;
+                    color: $baseColor1;
+        
+                    transition: all 0.5s ease;
+                    &:hover{
+                        background-color: $baseColor2;
+                        color: $baseColor4;
+                    }
+                  }
+   
+            }
+        }
+    }
 }
 
 

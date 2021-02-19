@@ -156,6 +156,111 @@ header {
       transform: scale(0.7);
       flex: 0.3; }
 
+.projects {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .projects h3 {
+    color: #ee9d53;
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 1px; }
+  .projects .webProjects {
+    width: 90%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; }
+    .projects .webProjects h4 {
+      color: #ac3b69;
+      font-size: 1.6em;
+      font-weight: 600;
+      font-family: "Montserrat";
+      text-align: center;
+      margin-bottom: 1em;
+      letter-spacing: 1px; }
+    .projects .webProjects .Wprojects {
+      width: 100%;
+      margin: 1em 0 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1em;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1); }
+      .projects .webProjects .Wprojects .article {
+        position: relative;
+        overflow: hidden; }
+        .projects .webProjects .Wprojects .article .article__content {
+          backdrop-filter: blur(20px);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          padding: 1rem;
+          z-index: 1;
+          margin-top: 1rem;
+          text-align: center; }
+          .projects .webProjects .Wprojects .article .article__content:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 200%;
+            pointer-events: none;
+            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.009) 11.7%, rgba(0, 0, 0, 0.034) 22.1%, rgba(0, 0, 0, 0.072) 31.2%, rgba(0, 0, 0, 0.123) 39.4%, rgba(0, 0, 0, 0.182) 46.6%, rgba(0, 0, 0, 0.249) 53.1%, rgba(0, 0, 0, 0.32) 58.9%, rgba(0, 0, 0, 0.394) 64.3%, rgba(0, 0, 0, 0.468) 69.3%, rgba(0, 0, 0, 0.54) 74.1%, rgba(0, 0, 0, 0.607) 78.8%, rgba(0, 0, 0, 0.668) 83.6%, rgba(0, 0, 0, 0.721) 88.7%, rgba(0, 0, 0, 0.762) 94.1%, rgba(0, 0, 0, 0.79) 100%);
+            transform: translateY(-30%); }
+        .projects .webProjects .Wprojects .article .content__title {
+          font-size: 1.3rem;
+          font-weight: 600;
+          line-height: 1.5;
+          color: #ffffff; }
+        .projects .webProjects .Wprojects .article .content__description {
+          font-family: "Raleway";
+          color: #ac3b69;
+          font-size: 11.5emem;
+          line-height: 1.35;
+          padding: 1em; }
+        .projects .webProjects .Wprojects .article .content__techIcons {
+          color: #ee9d53;
+          padding: 1em;
+          display: flex;
+          flex: row nowrap;
+          justify-content: center;
+          align-items: center; }
+          .projects .webProjects .Wprojects .article .content__techIcons .techIcon {
+            font-size: 1.5em;
+            padding: 0.4em; }
+            .projects .webProjects .Wprojects .article .content__techIcons .techIcon:hover {
+              color: #ac3b69; }
+        .projects .webProjects .Wprojects .article .btn {
+          border: none;
+          border-radius: 2px;
+          outline: none;
+          font-family: "Raleway";
+          font-size: 1.5em;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin: 0  0.5em;
+          padding: 0.4em .8em;
+          cursor: pointer;
+          background-color: #ffffff;
+          color: #572B4B;
+          transition: all 0.5s ease; }
+          .projects .webProjects .Wprojects .article .btn:hover {
+            background-color: #ac3b69;
+            color: #ffffff; }
+
 #particles-js {
   position: absolute;
   top: 0;
