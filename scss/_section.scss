@@ -1,3 +1,4 @@
+@import '_card';
 section{
     padding: 50vh 5vw;
 }
@@ -77,93 +78,28 @@ section{
         .Wprojects{
             width: 100%;
             @include flexPosition(row,nowrap,center,center);
-            
-            .article{
-                box-shadow: 0px 7px 10px rgba(0,0,0,0.5);
-                border-radius: 5px;
-                margin: 1em;
-                padding: 2em;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 400px;
-                height: 600px;
-                background: url(../assets/images/projectImages/slide1.jpg) no-repeat center center / cover fixed;
-                // backdrop-filter: blur(1px);
-                // -webkit-filter: blur(1px);
-                .article__content {
-                    background-color: rgb(255,255,255); /* Fallback color */
-                    background-color: rgba(42,22,38, 0.8);
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    width: 80%;
-                    padding: 1rem;
-                    text-align: center;
-                    .content{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        justify-content: center;
-                    }
-                    img{
-                        border-radius: 5px;
-                    }
-                }
-                .content__title {
-                    font-size: 1.3rem;
-                    font-weight: 600;
-                    line-height: 1.5;
+            .btn {
+                border: none;
+                border-radius: 2px;
+                outline: none;
+                font-family: $bodyFont;
+                font-size: 1.5em;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin: 0  0.5em;
+                padding: 0.4em .8em;
+                cursor: pointer;
+                
+                background-color: $baseColor4;
+                color: $baseColor1;
+    
+                transition: all 0.5s ease;
+                &:hover{
+                    background-color: $baseColor2;
                     color: $baseColor4;
-                    padding-top: 1em;
                 }
-                  
-                .content__description {
-                    font-family: $bodyFont;
-                    color: $baseColor2;
-                    font-size: 1.2em;
-                    line-height: 1.35;
-                }
-                .content__techIcons{
-                    color: $baseColor3;
-                    padding: 1em;
-                    @include flexPosition(row,nowrap,center,center);
-                    .techIcon{
-                        font-size: 1.5em;
-                        padding: 0.4em;
-                        &:hover{
-                            color: $baseColor2;
-                        }
-                    }
-                    .techIcon img{
-                        width: 20px;
-                        height: 20px;
-                    }
-                }
-                .btn {
-                    border: none;
-                    border-radius: 2px;
-                    outline: none;
-                    font-family: $bodyFont;
-                    font-size: 1.5em;
-                    font-weight: 600;
-                    letter-spacing: 1px;
-                    margin: 0  0.5em;
-                    padding: 0.4em .8em;
-                    cursor: pointer;
-                    
-                    background-color: $baseColor4;
-                    color: $baseColor1;
-        
-                    transition: all 0.5s ease;
-                    &:hover{
-                        background-color: $baseColor2;
-                        color: $baseColor4;
-                    }
-                  }
-   
-            }
+              }
+
         }
     }
 }
@@ -178,91 +114,6 @@ section{
     justify-content: center;
     .about_skills{
         @include flexPosition(row,nowrap,center,center);
-        .container{
-            width: 90%;
-            @include flexPosition(row,nowrap,center,center);
-            padding: 1em;
-            .card{
-                position: relative;
-                cursor: pointer;
-                border: none;
-                border-radius: 5px;
-                &:hover .face.face1{
-                    background: $baseColor1;
-                    transform: translateY(0px);
-                }
-                &:hover .face.face1 .content{
-                    opacity: 1;
-                }
-                &:hover .face.face2{
-                    transform: translateY(0);
-                }
-            }
-            .card .face {
-                width: 400px;
-                height: 200px;
-                transition: 0.5s;
-                border: none;
-                border-radius: 5px;
-            }
-            .card .face.face1{
-                position: relative;
-                background: $baseColor1;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                z-index: 1;
-                transform: translateY(100px);
-                border: none;
-                border-radius: 5px;
-            }
-            .card .face.face1 .content{
-                opacity: 0.7;
-                transition: 0.5s;
-                @include flexPosition(row,nowrap,center,center);
-                h3{
-                    font-family: $tittlesFont;
-                    color: $baseColor4;
-                    text-align: center;
-                    font-size: 1.5em;
-                    padding: 0;
-                    margin: 1em;
-                }
-                .fas{
-                    padding-right: 0.4em;
-                }
-            }
-            .card .face.face2{
-                position: relative;
-                background: $baseColor2;
-                @include flexPosition(row,nowrap,center,center);
-                padding: 2em;
-                box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
-                transform: translateY(-100px);
-            }
-            .card .face.face2 .content p{
-                padding: 1em;
-                text-align: center;
-                color: $baseColor4;
-                font-family: $bodyFont;
-            }
-            .card .face.face2 .content .content__techIcons{
-                color: $baseColor3;
-                padding: 1em;
-                @include flexPosition(row,nowrap,center,center);
-                .techIcon{
-                    font-size: 1.8em;
-                    padding: 0.4em;
-                    &:hover{
-                        color: $baseColor4;
-                    }
-                    img{
-                        width: 45px;
-                        height: 40px;
-                    }
-                }
-            }
-        }
     }
 }
 
