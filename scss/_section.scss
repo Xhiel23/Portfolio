@@ -136,6 +136,10 @@ section{
                             color: $baseColor2;
                         }
                     }
+                    .techIcon img{
+                        width: 20px;
+                        height: 20px;
+                    }
                 }
                 .btn {
                     border: none;
@@ -173,12 +177,11 @@ section{
     align-items: center;
     justify-content: center;
     .about_skills{
+        @include flexPosition(row,nowrap,center,center);
         .container{
             width: 90%;
-            display: flex;
-            justify-content: space-between;
-            align-content: center;
-            padding: 2em;
+            @include flexPosition(row,nowrap,center,center);
+            padding: 1em;
             .card{
                 position: relative;
                 cursor: pointer;
@@ -186,7 +189,7 @@ section{
                 border-radius: 5px;
                 &:hover .face.face1{
                     background: $baseColor1;
-                    transform: translateY(20px);
+                    transform: translateY(0px);
                 }
                 &:hover .face.face1 .content{
                     opacity: 1;
@@ -252,6 +255,10 @@ section{
                     padding: 0.4em;
                     &:hover{
                         color: $baseColor4;
+                    }
+                    img{
+                        width: 45px;
+                        height: 40px;
                     }
                 }
             }
