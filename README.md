@@ -11,7 +11,7 @@
     <br />
     <a href="https://github.com/Xhiel23/Portfolio/issues">Comunica un bug</a>
     ·
-    <a href="https://github.com/Xhiel23/Practica2_STKLM/issues">Añade una nueva funcionalidad</a>
+    <a href="https://github.com/Xhiel23/Portfolioissues">Añade una nueva funcionalidad</a>
   </p>
 </p>
 
@@ -74,7 +74,7 @@ Para guardar una copia local y hacerla funcionar sigue los pasos de la sección 
 
 1. Clona el repositorio
   ```sh
-  git clone https://github.com/Xhiel23/Practica2_STKLM.git
+  git clone https://github.com/Xhiel23/Portfolio.git
   ```
 2. Abre la carpeta en VS Code
 
@@ -83,7 +83,7 @@ Para guardar una copia local y hacerla funcionar sigue los pasos de la sección 
 
 1. Clona el repositorio
   ```sh
-  git clone https://github.com/Xhiel23/Practica2_STKLM.git
+  git clone https://github.com/Xhiel23/Portfolio.git
   ```
 2. Asegurate de tener instalado Nodejs
   ```sh
