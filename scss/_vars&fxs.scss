@@ -52,3 +52,6 @@ $bodyFont: 'Raleway';
         @media screen and (max-width:650px) { @content };
     }
 }
+@mixin glass($direction1, $direction2,$intensity1, $intensity2){
+    background: linear-gradient(to $direction1 $direction2, rgba(255,255,255,$intensity1),rgba(255,255,255,$intensity2));
+}

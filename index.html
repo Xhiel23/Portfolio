@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <!-- Barba -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core" defer></script>
     <!-- Particles -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js" defer></script>
     <!-- JS -->
@@ -37,10 +35,10 @@
                     <li class="menuItem"><a href="#contact" title="Contact">Contact Me</a></li>
                 </ul>
             </div> 
-            <div class="menuIcon">
-                <span></span>
-                <span></span>
-                <span></span>
+            <div class="menuIcon" id="hamburger">
+                <span class="bars" id="bar1"></span>
+                <span class="bars" id="bar2"></span>
+                <span class="bars" id="bar3"></span>
             </div>
         </div>
     </header>
@@ -68,7 +66,7 @@
                         <div class="article__content">
                             <img src="assets/images/projectImages/pixar.jpg" alt="">
                             <div class="content">
-                                <h4 class="content__title">Case Study: Pixar Web</h4>
+                                <h4 class="content__title">Case Study: Pixar Animation Studios</h4>
                                 <p class="content__description"> This is a copy of the Pixar website as a practice for the Web Developer course from BeJob. </p>
                                 <ul class="content__techIcons">
                                     <li class="techIcon"><i class="fab fa-html5"></i></li>
@@ -77,11 +75,31 @@
                                     <li class="techIcon"><i class="fab fa-gulp"></i></li>
                                 </ul>
                                 <button class="btn">
-                                    <a class="a" href="https://github.com/Xhiel23/Practica1-Pixar" title="Github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>
+                                    <a class="a" href="https://github.com/Xhiel23/Practica1-Pixar" title="Github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
                                 </button>
                             </div>
                         </div>
                     </article>
+                    <article class="article">
+                        <div class="article__content">
+                            <img src="assets/images/projectImages/stklm.png" alt="STKLM">
+                            <div class="content">
+                                <h4 class="content__title">Case Study: STKLM Web</h4>
+                                <p class="content__description"> This is a copy of the STKLM website as a practice for the Web Developer course from BeJob. </p>
+                                <ul class="content__techIcons">
+                                    <li class="techIcon"><i class="fab fa-html5"></i></li>
+                                    <li class="techIcon"><i class="fab fa-css3-alt"></i></li>
+                                    <li class="techIcon"><i class="fab fa-js"></i></li>
+                                    <li class="techIcon"><i class="fab fa-sass"></i></li>
+                                    <li class="techIcon"><i class="fab fa-gulp"></i></li>
+                                </ul>
+                                <button class="btn">
+                                    <a class="a" href="https://github.com/Xhiel23/Practica2_STKLM" title="Github" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
                     
                 </div>
             </div>
@@ -98,19 +116,8 @@
                     </article>
                   </div>
             </div>
-            <div class="illustration">
-                <h4>Illustration</h4>
-                <div class="grid">
-                    <article class="article">
-                      <img class="img" src="assets/slide0.jpg" alt="Item">
-                      <h5 class="overlay">Título del proyecto</h5>
-                    </article>
-                    <article class="article">
-                      <img class="img" src="assets/slide0.jpg" alt="Item">
-                      <h5 class="overlay">Título del proyecto</h5>
-                    </article>
-                </div> -->
-            </div>
+
+            </div> -->
         </section>
         <section class="contactSection" id="contact">
             <div class="formContainer">
