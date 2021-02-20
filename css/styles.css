@@ -139,6 +139,9 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
   .header__li {
     margin: 1em 0; } }
 
+section {
+  padding: 50vh 5vw; }
+
 .home {
   width: 100%;
   height: 80vh; }
@@ -227,8 +230,14 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
         padding: 2em;
         display: flex;
         align-items: center;
-        justify-content: center; }
+        justify-content: center;
+        width: 400px;
+        height: 600px;
+        background: url(../assets/images/projectImages/slide1.jpg) no-repeat center center/cover fixed; }
         .projects .webProjects .Wprojects .article .article__content {
+          background-color: white;
+          /* Fallback color */
+          background-color: rgba(42, 22, 38, 0.8);
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -283,6 +292,99 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
           .projects .webProjects .Wprojects .article .btn:hover {
             background-color: #ac3b69;
             color: #ffffff; }
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .about h3 {
+    color: #ee9d53;
+    font-size: 2.5em;
+    font-weight: 600;
+    font-family: "Montserrat";
+    text-align: center;
+    margin-bottom: 1em;
+    letter-spacing: 1px; }
+  .about .about_skills .container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 2em; }
+    .about .about_skills .container .card {
+      position: relative;
+      cursor: pointer;
+      border: none;
+      border-radius: 5px; }
+      .about .about_skills .container .card:hover .face.face1 {
+        background: #572B4B;
+        transform: translateY(20px); }
+      .about .about_skills .container .card:hover .face.face1 .content {
+        opacity: 1; }
+      .about .about_skills .container .card:hover .face.face2 {
+        transform: translateY(0); }
+    .about .about_skills .container .card .face {
+      width: 400px;
+      height: 200px;
+      transition: 0.5s;
+      border: none;
+      border-radius: 5px; }
+    .about .about_skills .container .card .face.face1 {
+      position: relative;
+      background: #572B4B;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      transform: translateY(100px);
+      border: none;
+      border-radius: 5px; }
+    .about .about_skills .container .card .face.face1 .content {
+      opacity: 0.7;
+      transition: 0.5s;
+      display: flex;
+      flex: row nowrap;
+      justify-content: center;
+      align-items: center; }
+      .about .about_skills .container .card .face.face1 .content h3 {
+        font-family: "Montserrat";
+        color: #ffffff;
+        text-align: center;
+        font-size: 1.5em;
+        padding: 0;
+        margin: 1em; }
+      .about .about_skills .container .card .face.face1 .content .fas {
+        padding-right: 0.4em; }
+    .about .about_skills .container .card .face.face2 {
+      position: relative;
+      background: #ac3b69;
+      display: flex;
+      flex: row nowrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+      box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+      transform: translateY(-100px); }
+    .about .about_skills .container .card .face.face2 .content p {
+      padding: 1em;
+      text-align: center;
+      color: #ffffff;
+      font-family: "Raleway"; }
+    .about .about_skills .container .card .face.face2 .content .content__techIcons {
+      color: #ee9d53;
+      padding: 1em;
+      display: flex;
+      flex: row nowrap;
+      justify-content: center;
+      align-items: center; }
+      .about .about_skills .container .card .face.face2 .content .content__techIcons .techIcon {
+        font-size: 1.8em;
+        padding: 0.4em; }
+        .about .about_skills .container .card .face.face2 .content .content__techIcons .techIcon:hover {
+          color: #ffffff; }
 
 #particles-js {
   position: absolute;
