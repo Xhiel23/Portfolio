@@ -1,85 +1,104 @@
 @import '_vars&fxs';
-.header {
-	width: 100%;
+
+
+
+.header{
+  width: 100%;
 	background-color: transparent;
-	padding: 1em;
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: space-between;
-	align-items: center;
-    z-index: 100;
-    @include fixedTop;
+	padding: 1em 3em;
+  @include flexPosition(row,nowrap,space-between,center);
+  z-index: 100;
+  @include fixedTop;
+  @include respond(medium){
+    @include flexPosition(row,nowrap,space-evenly,center);
   }
   .header__h1{
       img{
-       transform: scale(0.5) ;
+        transform: scale(0.5) ;
+      }
+  }
+  .header__menuIcon{
+    display: none;
+    @include respond(medium){
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      width: 50px;
+      cursor:pointer;
+    }
+    .bars{
+      background: $baseColor3;
+      border-radius: 10px;
+      height: 6px;
+      margin: 5px 0;
+      transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
+      @for $i from 1 through 3{
+        &:nth-child(#{$i}) {
+          width: calc(25% + #{$i} * 25%);
+        }
+      }
     }
   }
-  .menuIcon {
-    display: none;
+  .header__nav{
+    width: 100%;
+    @include respond(medium){
+      display: none;
+    }
   }
-  @media screen and (max-width: 600px) {
-    .menuIcon {
-	display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 50px;
-    cursor:pointer;
-    .bars{
-        background: $baseColor3;
-        border-radius: 10px;
-        height: 6px;
-        margin: 5px 0;
-        transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
-            @for $i from 1 through 3 {
-                &:nth-child(#{$i}) {
-                    width: calc(25% + #{$i} * 25%);
-                }
-	        }
-        }
-    }  
-}
-  .header__nav {
-	width: 100%;
-  }
-  @media screen and (max-width: 600px) {
-	.header__nav {
-	  display: none;
-	}
-  }
-  @media screen and (max-width: 600px) {
-	.header__nav.ver {
-	  display: flex;
-	}
+  .header__nav.ver{
+    @include respond(medium){
+      display: flex;
+    }
   }
   .header__ul {
-	display: flex;
-	flex-flow: row nowrap;
-	justify-content: flex-end;
-	align-items: center;
-  }
-  @media screen and (max-width: 600px) {
-	.header__ul {
-	  flex-direction: column;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    @include respond(medium){
+      flex-direction: column;
       background-color: $baseColor1;
       width: 100%;
-	}
+    }
   }
-  .header__li {
-	margin: 0 1em;
+  .header__li{
+    margin: 0 1em;
     font-weight: 600;
     color: $baseColor3;
     text-transform: capitalize;
     letter-spacing: 0;
     padding: 1em 0;
     font-size: 1.2em;
-        &:hover{
-            color: $baseColor2;
-        }
+    transition: 0.5s;
+    a{
+      position: relative;
+      display: block;
+      text-transform: uppercase;
+      &::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: $baseColor3;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.5s;
+      }
+  
+      &:hover {
+        color: $baseColor2;
+      }
+  
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+    }
+    @include respond(medium){
+      margin: 1em 0;
+    }
   }
-  @media screen and (max-width: 600px) {
-	.header__li {
-	  margin: 1em 0;
-	}
-  }
+}
