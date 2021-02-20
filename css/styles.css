@@ -110,20 +110,17 @@ header {
           width: calc(25% + 2 * 25%); }
         header .centered .menuIcon .bars:nth-child(3) {
           width: calc(25% + 3 * 25%); }
-        header .centered .menuIcon .bars .active ~ span:nth-of-type(1) {
-          transform-origin: bottom;
-          transform: rotatez(45deg) translate(8px, 0px); }
-      header .centered .menuIcon .bars.active ~ span:nth-of-type(1) {
-        transform-origin: bottom;
-        transform: rotatez(45deg) translate(8px, 0px); }
-      header .centered .menuIcon .bars.active ~ span:nth-of-type(2) {
-        width: 100%;
-        transform-origin: top;
-        transform: rotatez(-45deg); }
-      header .centered .menuIcon .bars.active ~ span:nth-of-type(3) {
-        width: 100%;
-        transform-origin: bottom;
-        transform: translate(3px, -20px) rotatez(45deg); }
+    header .centered #hamburger.active span:nth-child(1) {
+      width: 40%;
+      transform: rotate(90deg);
+      background: #ac3b69; }
+    header .centered #hamburger.active span:nth-child(2) {
+      width: 40%;
+      transform: translate(15px, -12px) rotate(90deg); }
+    header .centered #hamburger.active span:nth-child(3) {
+      width: 40%;
+      transform: translate(30px, -24px) rotate(90deg);
+      background: #ac3b69; }
 
 .home {
   width: 100%;

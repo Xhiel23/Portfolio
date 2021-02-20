@@ -32,7 +32,6 @@ header{
             flex-direction:column;
             width: 50px;
             cursor:pointer;
-            
             .bars{
                 background: $baseColor3;
                 border-radius:10px;
@@ -41,30 +40,25 @@ header{
                 transition: .4s  cubic-bezier(0.68, -0.6, 0.32, 1.6);
                 @for $i from 1 through 3 {
                     &:nth-child(#{$i}) {
-                    width: calc(25% + #{$i} * 25%);
+                        width: calc(25% + #{$i} * 25%);
                     }
                 }
-                .active ~ span:nth-of-type(1){
-                    transform-origin:bottom;
-                    transform:rotatez(45deg) translate(8px,0px);
-                }
             }
-            .bars.active ~ span:nth-of-type(1){
-                transform-origin:bottom;
-                transform:rotatez(45deg) translate(8px,0px);
-            }
-            .bars.active ~ span:nth-of-type(2){
-                width: 100%;
-                transform-origin:top;
-                transform:rotatez(-45deg)
-            }
-            .bars.active ~ span:nth-of-type(3){
-                width: 100%;
-                transform-origin:bottom;
-                transform: translate(3px,-20px) rotatez(45deg);
-              
-            }
+        }
+        #hamburger.active span:nth-child(1){
+            width: 40%;
+            transform: rotate(90deg);
+            background: $baseColor2;
+        }
+        #hamburger.active span:nth-child(2){
+            width: 40%;
+            transform: translate(15px,-12px) rotate(90deg);
 
+        }
+        #hamburger.active span:nth-child(3){
+            width: 40%;
+            transform: translate(30px,-24px) rotate(90deg);
+            background: $baseColor2;
         }
     }
 }
