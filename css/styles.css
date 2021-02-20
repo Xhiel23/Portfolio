@@ -107,10 +107,14 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
     width: 100%; }
     @media screen and (max-width: 1200px) {
       .header .header__nav {
-        display: none; } }
+        display: none;
+        opacity: 0; } }
   @media screen and (max-width: 1200px) {
     .header .header__nav.ver {
-      display: flex; } }
+      display: flex;
+      position: absolute;
+      top: 80%;
+      opacity: 1; } }
   .header .header__ul {
     display: flex;
     flex-flow: row nowrap;

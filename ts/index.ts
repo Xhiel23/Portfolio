@@ -7,7 +7,7 @@ const nav   = (document.querySelector('.header__nav') as HTMLElement)
 hamburger. addEventListener('click', () : void =>{
     console.log("I got clicked");
     hamburger.classList.toggle('active');
-    nav.classList.toggle('visible');
-    menu.classList.toggle('visible');
+    nav.classList.toggle('ver');
+
 });
 
