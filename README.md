@@ -23,9 +23,6 @@
   <ol>
     <li>
       <a href="#sobre-el-proyecto">Sobre el proyecto</a>
-      <ul>
-        <li><a href="#creado-con">Creado con</a></li>
-      </ul>
     </li>
     <li>
       <a href="#antes-de-comenzar">Antes de comenzar</a>
