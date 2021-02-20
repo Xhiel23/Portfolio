@@ -2,6 +2,11 @@
             width: 90%;
             @include flexPosition(row,nowrap,center,center);
             padding: 1em;
+            @include respond(small){
+                flex-direction: column;
+                width: 60%;
+                margin: auto;
+            }
             .card{
                 position: relative;
                 cursor: pointer;
@@ -24,6 +29,9 @@
                 transition: 0.5s;
                 border: none;
                 border-radius: 5px;
+                @include respond(small){
+                    width: 300px;
+                }
             }
             .card .face.face1{
                 position: relative;
@@ -36,6 +44,7 @@
                 transform: translateY(100px);
                 border: none;
                 border-radius: 5px;
+
             }
             .card .face.face1 .content{
                 opacity: 0.7;
@@ -51,28 +60,37 @@
                     font-size: 1.5em;
                     padding: 0;
                     margin: 1em;
-                }
-                .fas{
-                    padding-right: 0.4em;
+                    @include respond(small){
+                        font-size: 1.2em;
+                    }
                 }
             }
             .card .face.face2{
                 position: relative;
                 background: $baseColor2;
                 @include flexPosition(row,nowrap,center,center);
-                padding: 2em;
+                padding: 1em;
                 box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
                 transform: translateY(-100px);
+                @include respond(small){
+                    padding: 0.5em;
+                }
             }
             .card .face.face2 .content p{
                 padding: 1em;
                 text-align: center;
                 color: $baseColor4;
                 font-family: $bodyFont;
+                @include respond(small){
+                    padding: 0.6em;
+                }
             }
             .card .face.face2 .content .content__techIcons{
                 color: $baseColor3;
                 padding: 1em;
+                @include respond(small){
+                    padding: 0.5em;
+                }
                 @include flexPosition(row,nowrap,center,center);
                 .techIcon{
                     font-size: 1.8em;

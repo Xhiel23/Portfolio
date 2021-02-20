@@ -20,6 +20,9 @@ $bodyFont: 'Raleway';
         font-family: $tittlesFont;
         text-align: center;
         letter-spacing: 1px;
+        @include respond(small){
+            font-size: 1.5em;
+        }
     }
 }
 
