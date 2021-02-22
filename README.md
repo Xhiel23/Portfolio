@@ -52,11 +52,10 @@ Portfolio personal creado con las siguientes tecnologías.
 * [Gulp](https://gulpjs.com)
 * [Browser Sync](http://www.browsersync.io)
 
-‼️‼️**CONSIDERACIONES -> La rama V2 contiene otro diseño mejorado**‼️‼️
+**A implementar**
 - [ ] La nave espacial es un placeholder y quiero poner un astronauta que vaya flotando en el espacio.
 - [ ] El menú en pantallas pequeñas es horrible y quiero poner uno más fluido.
 - [ ] En proyectos falta una sección de ilustraciones (que tengo que ver cuales voy a poner).
-- [ ] Los colores quiero cambiarlos también porque no me gustan demasiado.
 - [X] En móvil no se ve bien y no se que falla.
 - [ ] Tengo que ordenar los archivos .scss y usar BEM.
 - [ ] Tengo que poner animaciones.
