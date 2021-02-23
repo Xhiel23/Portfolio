@@ -70,7 +70,7 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
   justify-content: space-between;
   align-items: center;
   z-index: 100;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0; }
   @media screen and (max-width: 1200px) {
@@ -556,6 +556,36 @@ section {
     @media screen and (max-width: 1200px) {
       .about .about_skills {
         flex-direction: column; } }
+  .about #csp img {
+    width: auto;
+    height: 60px; }
+  .about #cpp img {
+    width: auto;
+    height: 60px; }
+  .about #matlab img {
+    width: auto;
+    height: 50px; }
+  .about #blender img {
+    width: auto;
+    height: 50px; }
+  .about #godot img {
+    width: auto;
+    height: 60px; }
+  .about #html img {
+    width: auto;
+    height: 50px; }
+  .about #css img {
+    width: auto;
+    height: 45px; }
+  .about #js img {
+    width: auto;
+    height: 45px; }
+  .about #gulp img {
+    width: auto;
+    height: 50px; }
+  .about #sass img {
+    width: 55px;
+    height: auto; }
 
 #particles-js {
   position: absolute;

@@ -8,7 +8,9 @@
 	padding: 1em 3em;
   @include flexPosition(row,nowrap,space-between,center);
   z-index: 100;
-  @include fixedTop;
+  position: absolute;
+  top: 0;
+  left: 0;
   @include respond(medium){
     @include flexPosition(row,nowrap,space-evenly,center);
   }
