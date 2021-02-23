@@ -59,7 +59,7 @@ Portfolio personal creado con las siguientes tecnologías.
 - [X] En móvil no se ve bien y no se que falla.
 - [ ] Tengo que ordenar los archivos .scss y usar BEM.
 - [ ] Tengo que poner animaciones.
-- [ ] Hay algunos iconos que tengo que cuadrar mejor porque no estan incluidos en fontawesome.
+- [X] Cuadrar iconos.
 
 
 
