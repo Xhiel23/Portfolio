@@ -13,10 +13,13 @@
   left: 0;
   @include respond(medium){
     @include flexPosition(row,nowrap,space-evenly,center);
+    padding: 0;
+    margin: 0;
+    position: relative;
   }
   .header__h1{
       img{
-        transform: scale(0.5) ;
+        transform: scale(0.5);
       }
   }
   .header__menuIcon{
@@ -43,18 +46,18 @@
     }
   }
   #hamburger.active span:nth-child(1){
-    width: 40%;
-    transform: rotate(90deg);
+    width: 50%;
     background: $baseColor2;
+    transform: translate(0,21px) rotate(90deg);
 }
 #hamburger.active span:nth-child(2){
-    width: 40%;
-    transform: translate(15px,-12px) rotate(90deg);
+    width: 50%;
+    transform: translate(15px,-5px) rotate(90deg);
 
 }
 #hamburger.active span:nth-child(3){
-    width: 40%;
-    transform: translate(30px,-24px) rotate(90deg);
+    width: 50%;
+    transform: translate(30px,-10px) rotate(90deg);
     background: $baseColor2;
 }
   .header__nav{
@@ -67,23 +70,27 @@
   .header__nav.ver{
     @include respond(medium){
       display: flex;
+      opacity: 1;
+      width: 80%;
+      height: 80vh;
       position: absolute;
       top: 80%;
-      opacity: 1;
+
 
     }
   }
   .header__ul {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     @include respond(medium){
       flex-direction: column;
-      background-color: $baseColor1;
+      background-color: $blackColor;
       width: 100%;
-
+      height: 100%;
     }
+
   }
   .header__li{
     margin: 0 1em;
