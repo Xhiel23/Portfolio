@@ -71,8 +71,7 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
   align-items: center;
   z-index: 100;
   position: absolute;
-  top: 0;
-  left: 0; }
+  top: 0; }
   @media screen and (max-width: 1200px) {
     .header {
       display: flex;
@@ -118,7 +117,10 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
     transform: translate(30px, -10px) rotate(90deg);
     background: #ac3b69; }
   .header .header__nav {
-    width: 100%; }
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em; }
     @media screen and (max-width: 1200px) {
       .header .header__nav {
         display: none;
@@ -281,7 +283,10 @@ section {
 
 .home {
   width: 100%;
-  height: 100vh; }
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .home .centeredSection {
     display: flex;
     flex: row nowrap;
@@ -289,7 +294,7 @@ section {
     align-items: center;
     position: absolute;
     background: transparent;
-    top: 20%;
+    top: 35%;
     left: 5%;
     width: 90%;
     margin: auto; }
@@ -301,8 +306,7 @@ section {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      justify-content: center;
-      padding: 1em; }
+      justify-content: center; }
       @media screen and (max-width: 1200px) {
         .home .centeredSection .textDiv {
           flex: 1;
@@ -338,13 +342,16 @@ section {
         height: 6px;
         margin: 1.5em 0;
         width: 30%; }
-    .home .centeredSection .imgDiv img {
-      transform: scale(0.7);
-      flex: 0.3; }
+    .home .centeredSection .imgDiv svg {
+      height: 170%;
+      width: 170%;
+      animation: orb-mover 8s linear infinite; }
       @media screen and (max-width: 1200px) {
-        .home .centeredSection .imgDiv img {
-          transform: scale(0.5);
-          flex: 1; } }
+        .home .centeredSection .imgDiv svg {
+          padding: 1em 0 0 0;
+          flex: 1;
+          transform: scale(0.8);
+          animation: none; } }
 
 .projects {
   width: 100%;
@@ -599,6 +606,26 @@ section {
   width: 90%;
   height: 100%;
   background-color: #2a1626; }
+
+@keyframes orb-mover {
+  0% {
+    transform: translateY(-100px);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  1% {
+    transform: translateY(-100px);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  49% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  51% {
+    transform: translateY(0px);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  99% {
+    transform: translateY(-100px);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  100% {
+    transform: translateY(-100px);
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955); } }
 
 .contactSection {
   display: flex;

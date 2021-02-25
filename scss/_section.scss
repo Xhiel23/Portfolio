@@ -6,11 +6,14 @@ section{
 .home{
     width: 100%;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     .centeredSection{
         @include flexPosition(row,nowrap,center,center);
         position: absolute;
         background: transparent;
-        top: 20%;
+        top: 35%;
         left: 5%;
         width: 90%;
         margin: auto;
@@ -24,7 +27,6 @@ section{
             flex-direction: column;
             align-items: flex-start;
             justify-content: center;
-            padding: 1em;
             
             @include respond(medium){
                 flex: 1;
@@ -65,14 +67,17 @@ section{
             }
         }
         .imgDiv{
-            img{
-                transform: scale(0.7);
-                flex: 0.3;
-                @include respond(medium){
-                    transform: scale(0.5);
-                    flex: 1;
-                }
+          svg{
+            height: 170%;
+            width: 170%;
+            animation: orb-mover 8s linear infinite;
+            @include respond(medium){
+              padding: 1em 0 0 0;
+              flex: 1;
+              transform: scale(0.8);
+              animation: none;
             }
+          }
         }
     }
 }
@@ -357,7 +362,38 @@ section{
 #particles-js{ 
     position:absolute; 
     top: 0;
-    width: 90%; 
+    width: 90%;  
     height: 100%; 
     background-color: #2a1626; 
 }
+
+$move-pos-top: -100px;
+$move-pos-bottom: 0px;
+$move-pos-easing: cubic-bezier(0.455, 0.030, 0.515, 0.955);
+@keyframes orb-mover {
+	0% {
+		transform: translateY($move-pos-top);
+		animation-timing-function: $move-pos-easing;
+	}
+	1% {
+		transform: translateY($move-pos-top);
+		animation-timing-function: $move-pos-easing;
+	}
+	49% {
+		transform: translateY($move-pos-bottom);
+		animation-timing-function: $move-pos-easing;
+	}
+	51% {
+		transform: translateY($move-pos-bottom);
+		animation-timing-function: $move-pos-easing;
+	}
+	99% {
+		transform: translateY($move-pos-top);
+		animation-timing-function: $move-pos-easing;
+	}
+	100% {
+		transform: translateY($move-pos-top);
+		animation-timing-function: $move-pos-easing;
+	}
+}
+
