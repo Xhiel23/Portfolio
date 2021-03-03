@@ -194,6 +194,14 @@ form, input, .contactSection .formContainer .row .column .inputBox.textArea text
     cursor: pointer;
     border: none;
     border-radius: 5px; }
+    @media screen and (max-width: 1200px) {
+      .container .card:active .face.face1 {
+        background: #572B4B;
+        transform: translateY(0px); }
+      .container .card:active .face.face1 .content {
+        opacity: 1; }
+      .container .card:active .face.face2 {
+        transform: translateY(0); } }
     .container .card:hover .face.face1 {
       background: #572B4B;
       transform: translateY(0px); }

@@ -12,6 +12,18 @@
                 cursor: pointer;
                 border: none;
                 border-radius: 5px;
+                @include respond(medium){
+                    &:active .face.face1{
+                        background: $baseColor1;
+                        transform: translateY(0px);
+                    }
+                    &:active .face.face1 .content{
+                        opacity: 1;
+                    }
+                    &:active .face.face2{
+                        transform: translateY(0);
+                    }
+                }
                 &:hover .face.face1{
                     background: $baseColor1;
                     transform: translateY(0px);
